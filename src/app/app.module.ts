@@ -7,7 +7,9 @@ import { RoutingRoutingModule } from './Routes/routing-routing.module';
 import { WelcomComponent } from './Pages/Welcome/Welcom.component';
 import { LoginComponent } from './Pages/Login/login.component';
 import { MasterComponent } from './Pages/MasterComponent/master.component';
-
+import { RegisterItemComponent } from './Pages/RegisterItem/register-item.component';
+import { AlifeFileToBase64Module } from 'alife-file-to-base64';
+ 
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { MasterComponent } from './Pages/MasterComponent/master.component';
     LoginComponent,
     WelcomComponent,
     MasterComponent,
+    RegisterItemComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RoutingRoutingModule
+    RoutingRoutingModule,
+    AlifeFileToBase64Module
   ],
   bootstrap: [AppComponent]
 })

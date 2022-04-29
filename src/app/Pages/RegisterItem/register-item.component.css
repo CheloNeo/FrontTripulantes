@@ -37,7 +37,95 @@ img{
     justify-content: center;  
 }
 .body .Container{
-    width: 70%;
-    height: 90%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(9,34,69,1);
+}
+.ContainerForms{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ButtonContainer{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.ButtonContainer button{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(13, 23, 36);
+    border:none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.ContainerLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerRigth{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    resize: none;
+    width: 80%;
+    height: 40%;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 30px;
+}
+#fileInput{
+    display: none;
+}
+#fileInputFinaly{
+    margin: 10px;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.Imagen{
+    width: 80%;
+    height: 70%;
+}
+.Imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

@@ -87,15 +87,12 @@
         flex-direction: row;
     }
     .leftComponent img{
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
        
     }
     .rigthComponent .Contenido{
-       
         top: -100vh;
-       
-    
     }
     .button {
         
