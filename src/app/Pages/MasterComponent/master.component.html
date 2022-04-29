@@ -1,0 +1,25 @@
+<div class="ContainerLogin">
+    <a *ngIf=" this.params == 1 || this.params == 'null'"
+        id="LoginId" [routerLink]="['/portal']" 
+        [queryParams]="{ location: 2}"
+    >
+        <img src="../../../assets/icons/box-arrow-in-right.svg" alt="">
+    </a>
+    <div class="leftComponent">
+        <img src="../../../assets/Logo.jpg" alt="">
+    </div>
+    <div class="rigthComponent">
+       
+        <img src="../../../assets/Barco.jfif" >
+        
+        <app-welcome *ngIf=" this.params == 1 || this.params == 'null'"> </app-welcome>
+        <app-login *ngIf=" this.params == 2">
+            {{this.params}}
+        </app-login>        
+    </div>
+
+
+    <!-- DATO VARIANTE PARA WELCOME -->
+    
+
+</div>
