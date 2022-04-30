@@ -13,19 +13,22 @@
             <div class="ContainerForms">
                 <div class="ContainerLeft">
                     <input type="text" name="Nombre" placeholder="Nombre">
-                    <textarea maxlength="500" name="Descripcion" id="Descripcion" placeholder="Descripción"></textarea>
+                    <textarea maxlength="600" name="Descripcion" id="Descripcion" placeholder="Descripción"></textarea>
                 </div>
                 <div class="ContainerRigth">
                     <input   id="fileInput" type="file" alife-file-to-base64 multiple (onFileChanged)="onFileChanges($event)">
                     <label id="fileInputFinaly" for="fileInput">Ingresa imagen aquí</label>
                     
-                    <div class="Imagen" *ngIf = "this.file != null">
-                        <img src={{this.file}} alt="">
+                    <div class="Imagen" >
+                        <img src={{this.file}} alt="" *ngIf = "this.file != null">
                     </div>
                 </div>
             </div>
             <div class="ButtonContainer">
                 <button id="ButtonSend">Enviar informacion</button>
+                <button id="CircularButon"> 
+                    <img id="SendIcon" src="../../../assets/icons/send.svg" >
+                </button>
             </div>
 
         </div>
