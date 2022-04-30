@@ -9,6 +9,7 @@ import { MasterComponent } from './Pages/MasterComponent/master.component';
 import { RegisterItemComponent } from './Pages/RegisterItem/register-item.component';
 import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 import { LoginComponent } from './Pages/login/login.component';
+import { ViewWordComponent } from './Pages/ViewWork/view-word.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './Pages/login/login.component';
     WelcomComponent,
     MasterComponent,
     RegisterItemComponent,
-    LoginComponent
+    LoginComponent,
+    ViewWordComponent
   ],
   imports: [
     BrowserModule,
