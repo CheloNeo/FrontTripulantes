@@ -5,19 +5,18 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { RoutingRoutingModule } from './Routes/routing-routing.module';
 import { WelcomComponent } from './Pages/Welcome/Welcom.component';
-import { LoginComponent } from './Pages/Login/login.component';
 import { MasterComponent } from './Pages/MasterComponent/master.component';
 import { RegisterItemComponent } from './Pages/RegisterItem/register-item.component';
 import { AlifeFileToBase64Module } from 'alife-file-to-base64';
- 
+import { LoginComponent } from './Pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     WelcomComponent,
     MasterComponent,
     RegisterItemComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
