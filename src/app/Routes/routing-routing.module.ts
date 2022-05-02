@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'registerItem', component: RegisterItemComponent
   },
   {
-    path: 'ViewWord', component: ViewWordComponent
+    path: 'viewWord', component: ViewWordComponent
   },
   {
     path: '**', redirectTo: 'portal'
